@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <ImageView
+        android:id="@+id/btn1"
+        style="@style/ukuran"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:contentDescription="@string/_1"
+        android:src="@drawable/batu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pemain" />
+
+    <ImageView
+        android:id="@+id/btn2"
+        style="@style/ukuran"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/_2"
+        android:src="@drawable/kertas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn1" />
+
+    <ImageView
+        android:id="@+id/btn3"
+        style="@style/ukuran"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/_3"
+        android:src="@drawable/gunting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn2" />
+
+    <ImageView
+        android:id="@+id/btn4"
+        style="@style/ukuran"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/_1"
+        android:src="@drawable/batu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/com" />
+
+    <ImageView
+        android:id="@+id/btn5"
+        style="@style/ukuran"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/_2"
+        android:src="@drawable/kertas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn4" />
+
+    <ImageView
+        android:id="@+id/btn6"
+        style="@style/ukuran"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/_3"
+        android:src="@drawable/gunting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn5" />
+
+    <ImageView
+        android:id="@+id/btn7"
+        style="@style/ukuran_refresh"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/_4"
+        android:src="@drawable/refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:rotation="-12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comic_neue_bold"
+            android:text="@string/kertas"
+            android:textColor="#FF9800"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-24dp"
+            android:fontFamily="@font/comic_neue_bold"
+            android:text="@string/gunting"
+            android:textColor="#4CAF50"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-24dp"
+            android:fontFamily="@font/comic_neue_bold"
+            android:text="@string/batu"
+            android:textColor="#673AB7"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:rotation="-12"
+        android:text="@string/vs"
+        android:textColor="@color/red"
+        android:textSize="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul" />
+
+    <TextView
+        android:id="@+id/com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="@string/com"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pemain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="240dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="@string/pemain_1"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
