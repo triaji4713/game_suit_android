@@ -10,4 +10,8 @@
     <color name="blu">#7E03A9F4</color>
     <color name="green">#4CAF50</color>
     <color name="red">#F44336</color>
+    <color name="deep_purple">#673AB7</color>
+    <color name="new_green">#4CAF50</color>
+    <color name="orange">#FF9800</color>
+    <color name="deep_blu">#2196F3</color>
 </resources>
